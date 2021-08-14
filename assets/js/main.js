@@ -105,6 +105,12 @@ $(document).ready(function(){
     cellAlign: 'left'
   });
 
+  var productImagesList = $('.product-images__list').flickity({
+    prevNextButtons: true,
+    wrapAround: true
+
+  });
+
 });
 
 var headerMain = $('.header__main');
@@ -136,6 +142,211 @@ window.addEventListener('scroll',function(){
 scrollTop.onclick = function(){
     window.scrollTo(0, 0);
 }
+
+
+// click quick view
+
+const popupQuickView = document.getElementById('popup_qv');
+const overlay = document.getElementById('overlay');
+
+
+
+const quickViews = document.querySelectorAll('.quick-view');
+
+quickViews.forEach(quickView => {
+  quickView.addEventListener('click', (e) => {
+    e.preventDefault();
+    popUpQuickviewToggle();
+  });
+});
+
+
+function popUpQuickviewToggle()
+{
+   overlay.classList.toggle('show');
+  popupQuickView.classList.toggle('show');
+
+  document.getElementsByTagName("html")[0].style.overflow = "hidden";
+  document.getElementsByTagName("body")[0].style.overflow = "hidden";
+}
+ 
+
+
+popupQuickView.addEventListener('click', (e) => {
+  if(e.target.className == "popup-quickview show") {
+    popupQuickView.classList.remove('show');
+    overlay.classList.remove('show');
+    document.getElementsByTagName("html")[0].style.overflow = "";
+    document.getElementsByTagName("body")[0].style.overflow = "";
+  }
+});
+
+
+// click size button
+const buttonSize = document.querySelectorAll('button.entry-summary__size-btn');
+
+for(let i = 0; i < buttonSize.length; i++)
+{
+  let btn =  buttonSize[i];
+  btn.addEventListener('click',function(){
+    
+    document.querySelector('button.entry-summary__size-btn.entry-summary__size-btn--active').classList.remove('entry-summary__size-btn--active');
+    this.classList.add('entry-summary__size-btn--active');
+    // console.log(document.querySelector('.entry-summary__size-btn--active'))
+  })
+}
+
+
+
+
+//show quickshop
+const quickShops = document.querySelectorAll('.quick-shop');
+const miniCart = document.getElementById('mini-cart');
+const minicartClose =  document.getElementById('minicart-close');
+
+
+quickShops.forEach(quickShop => {
+  quickShop.addEventListener('click', (e) => {
+    e.preventDefault();
+    popUpQuickShopToggle();
+  });
+});
+
+
+function popUpQuickShopToggle()
+{
+  overlay.classList.add('show');
+  miniCart.classList.add('show');
+  document.getElementsByTagName("html")[0].style.overflow = "hidden";
+  document.getElementsByTagName("body")[0].style.overflow = "hidden";
+}
+
+overlay.onclick = () =>{
+  overlay.classList.remove('show');
+  miniCart.classList.remove('show');
+  document.getElementsByTagName("html")[0].style.overflow = "";
+  document.getElementsByTagName("body")[0].style.overflow = "";
+}
+minicartClose.onclick = () =>{
+  overlay.classList.remove('show');
+  miniCart.classList.remove('show');
+  document.getElementsByTagName("html")[0].style.overflow = "";
+  document.getElementsByTagName("body")[0].style.overflow = "";
+}
+
+
+
+//popup search box
+
+const searchBox = document.getElementById('search-box');
+const popupSearch = document.getElementById('popup-search');
+const searchIconMobile = document.querySelector('.search-icon-mobile');
+
+searchBox.addEventListener('click', (e) => {
+  e.preventDefault();
+  popUpSeachBoxToggle();
+});
+searchIconMobile.addEventListener('click', (e) => {
+  e.preventDefault();
+  popUpSeachBoxToggle();
+});
+
+function popUpSeachBoxToggle(){
+  overlay.classList.add('show');
+  popupSearch.classList.add('show');
+  document.getElementsByTagName("html")[0].style.overflow = "hidden";
+  document.getElementsByTagName("body")[0].style.overflow = "hidden";
+}
+
+popupSearch.addEventListener('click', (e) => {
+  if(e.target.className == "popup-search show") {
+    popupSearch.classList.remove('show');
+    overlay.classList.remove('show');
+    document.getElementsByTagName("html")[0].style.overflow = "";
+    document.getElementsByTagName("body")[0].style.overflow = "";
+  }
+});
+
+//hidden All PopUp
+
+const popupCloses = document.querySelectorAll('.popup-close');
+
+
+popupCloses.forEach(popupClose => {
+  popupClose.onclick = () =>{
+    hiddenAllPopUp();
+  }
+});
+
+function hiddenAllPopUp(){
+  popupQuickView.classList.remove('show');
+
+  popupSearch.classList.remove('show');
+
+  overlay.classList.remove('show');
+
+  document.getElementsByTagName("html")[0].style.overflow = "";
+  document.getElementsByTagName("body")[0].style.overflow = "";
+
+}
+
+
+
+// setting default attribute to disable of minus button
+
+document.querySelector('.minus-btn').setAttribute('disabled','disabled');
+
+var valueCount;
+
+// change price product
+
+//var price = document.getElementById('price-product').innerText;
+
+// function priceTotal()
+// {
+//   var total = valueCount * price;
+//   document.getElementById('price-product').innerText = total;
+// }
+
+//plus btn
+document.querySelector('.plus-btn').addEventListener('click',function(){
+  //getting number of input
+  valueCount = document.getElementById('quantity-number').value;
+  
+  //input value increment 1
+  valueCount++;
+
+  //setting increment input value
+  document.getElementById('quantity-number').value = valueCount;
+  
+  if(valueCount > 1)
+  {
+    document.querySelector('.minus-btn').removeAttribute('disabled');
+    document.querySelector('.minus-btn').classList.remove('disabled');
+  }
+  //Call price function
+  // priceTotal();
+})
+
+//minus btn
+
+document.querySelector('.minus-btn').addEventListener('click',function(){
+  //getting number of input
+  valueCount = document.getElementById('quantity-number').value;
+  
+  //input value increment 1
+  valueCount--;
+
+  //setting increment input value
+  document.getElementById('quantity-number').value = valueCount;
+
+  if(valueCount == 1)
+  {
+    document.querySelector('.minus-btn').setAttribute('disabled','disabled');
+  }
+    //Call price function
+    // priceTotal();
+})
 
 
 

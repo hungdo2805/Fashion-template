@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
+
     <div class="header-wrapper">
         <header class="header">
             <div class="header-inner">
@@ -125,9 +126,7 @@
 
                         <ul class="icon__group-list">
                             <li class="icon__group-item">
-                                <a href="#" class="icon__group-link">
-                                    <!-- <img src="assets/images/svg/search.svg" class="img_fluid search-icon" alt="search_icon"/> -->
-                                    
+                                <a href="#" class="icon__group-link" id="search-box">                                  
                                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
                                         <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                                     </svg>
@@ -135,7 +134,7 @@
                             </li>
                             <li class="icon__group-item  dn-mobile">
                                 <a href="#"class="icon__group-link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
                                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
                                     </svg>
                                 </a>
@@ -150,7 +149,7 @@
                             </li>
                             <li class="icon__group-item">
                                 <a href="#" class="icon__group-link" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
                                         <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path>
                                     </svg>
                                     <span class="minicart-count">0</span>
@@ -202,8 +201,8 @@
             <input type="checkbox" hidden="" class="nav-input" id="nav-mobile-input">
             <label for="nav-mobile-input" class="nav__overlay"></label>
             <div class="nav__mobile">
-                <label for="nav-mobile-input" class="nav__moblie-close">
-                    <i class="fas fa-times"></i>
+                <label for="nav-mobile-input" class="nav__mobile-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                 </label>
                 <ul class="header__mobile-list">
                     <li class="header__mobile-item">
@@ -326,7 +325,7 @@
                                 </a>
                             </div>
                             <div class="product-item__action">
-                                <a href="#" class="quick quick-view">
+                                <a href="#" class="quick quick-view" >
                                     <span>Quick View</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
                                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>
@@ -1098,7 +1097,30 @@
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="our-services_item">
                         <div class="our-services__icon">
-                            <a href="#"><img src="assets/images/services/services1.png" class="img-fluid" alt="Image your sevices"></a>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 508 508" style="enable-background:new 0 0 508 508;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M430.4,0H77.6L0,112.1V508h508V112.1L430.4,0z M335.9,16.4h85.8l62.5,90.1H335.9V16.4z M188.5,16.4h131.1v90.1H188.5V16.4
+                                            z M188.4,122.9h0.1h131.1v74.8l-16.4-10.9l-24.6,16.4L254,186.8l-24.6,16.4l-24.6-16.4l-16.4,10.9V122.9z M86.2,16.4H172v90.1
+                                            H23.8L86.2,16.4z M491.8,491.6H16.4V122.9h155.7v105.4l32.8-21.9l24.6,16.4l24.6-16.4l24.6,16.4l24.6-16.4l32.8,21.9V122.9h155.7
+                                            V491.6z"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <polygon points="417.9,373.5 387.5,403.9 399.1,415.5 409.7,404.9 409.7,458.8 426.1,458.8 426.1,404.9 436.7,415.5 448.2,403.9 
+                                                    "/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <polygon points="344.1,373.5 313.8,403.9 325.3,415.5 335.9,404.9 335.9,458.8 352.3,458.8 352.3,404.9 362.9,415.5 374.5,403.9 
+                                                    "/>
+                                    </g>
+                                </g>
+
+                            </svg>
                         </div>
                         <div class="our-services__content">
                             <div class="our-services__content-title"><a href="#">Shipping Worldwide</a></div>
@@ -1109,7 +1131,34 @@
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="our-services_item">
                         <div class="our-services__icon">
-                            <a href="#"><img src="assets/images/services/services2.png" class="img-fluid" alt="Image your sevices"></a>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 508 508" style="enable-background:new 0 0 508 508;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M254,0C128.3,0,26.1,102.2,26.1,227.9c0,122.9,97.9,223.4,219.8,227.7V508l60.3-60.3l-60.3-60.3v52
+                                            c-113-4.4-203.5-97.5-203.5-211.5c0-116.7,94.9-211.6,211.6-211.6s211.6,94.9,211.6,211.6h16.3C481.9,102.2,379.7,0,254,0z
+                                            M262.1,426.6l21,21l-21,21V426.6z"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M131.9,105.8V350h244.2V105.8H131.9z M229.6,122.1L229.6,122.1h48.8v32.6h-48.8V122.1z M359.8,333.7H148.2V122.1h65.1
+                                            v48.8h81.4v-48.8h65.1V333.7z"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <polygon points="319.1,248.2 291.2,279.5 303.4,290.3 311,281.8 311,317.4 327.3,317.4 327.3,281.8 334.8,290.3 347,279.5"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <polygon points="251.4,248.2 223.5,279.5 235.7,290.3 243.2,281.8 243.2,317.4 259.5,317.4 259.5,281.8 267.1,290.3 279.2,279.5 
+                                                    "/>
+                                    </g>
+                                </g>
+
+                            </svg>
                         </div>
                         <div class="our-services__content">
                             <div class="our-services__content-title"><a href="#">14 Days Return</a></div>
@@ -1120,7 +1169,24 @@
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="our-services_item">
                         <div class="our-services__icon">
-                            <a href="#"><img src="assets/images/services/services3.png" class="img-fluid" alt="Image your sevices"></a>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 508 508" style="enable-background:new 0 0 508 508;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M376.7,0H131.3c2,61.4-43.6,101.1-98.2,98.2v68.4C37.6,423,254,508,254,508s214.3-85,220.9-341.4V98.2
+                                            C407.9,103.9,371.7,41.3,376.7,0z M49.5,166.6v-52.4c52.1-4,93.9-45.7,97.9-97.9h98.5v106.8c-47.6,4-85.6,42-89.6,89.6H52.6
+                                            C50.6,197.5,49.5,182.1,49.5,166.6z M245.8,485.9C144.9,434.8,74.6,338.7,55,229h101.2c4,47.6,42,85.6,89.6,89.6V485.9z
+                                            M172.2,220.9c0-45.1,36.7-81.8,81.8-81.8c45.1,0,81.8,36.7,81.8,81.8c0,45.1-36.7,81.8-81.8,81.8
+                                            C208.9,302.7,172.2,266,172.2,220.9z M262.2,485.9V318.6c47.6-4,85.6-42,89.6-89.6H453C433.4,338.7,363.1,434.8,262.2,485.9z
+                                            M458.5,166.6c0,15.5-1.1,30.9-3.1,46.1H351.7c-4-47.6-42-85.6-89.6-89.6V16.4h98.5c4,52.1,45.8,93.8,97.9,97.8V166.6z"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <polygon points="295.8,182.4 236.2,242 212.2,218.1 200.6,229.6 236.2,265.2 307.4,193.9 		"/>
+                                    </g>
+                                </g>
+                            </svg>
                         </div>
                         <div class="our-services__content">
                             <div class="our-services__content-title"><a href="#">Security Payment</a></div>
@@ -1131,7 +1197,43 @@
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="our-services_item">
                         <div class="our-services__icon">
-                            <a href="#"><img src="assets/images/services/services4.png" class="img-fluid" alt="Image your sevices"></a>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 508.034 508.034" style="enable-background:new 0 0 508.034 508.034;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M254,0.017c-94.8,0-172.1,77.2-172.1,172.1v8.2h41.4c4.3,68.4,61.2,122.9,130.7,122.9c51.7,0,96.4-30.2,117.7-73.7H426
+                                            v-57.4C426,77.217,348.8,0.017,254,0.017z M361,213.017h-59.9c-3.2-14-15.7-24.6-30.7-24.6c-17.4,0-31.5,14.1-31.5,31.5
+                                            c0,17.4,14.1,31.5,31.5,31.5c14.1,0,25.9-9.3,29.9-22.1h52.9c-19.9,34.2-56.8,57.4-99.2,57.4c-63.2,0-114.7-51.5-114.7-114.7
+                                            s51.4-114.6,114.7-114.6s114.7,51.5,114.7,114.7C368.7,186.517,365.9,200.317,361,213.017z M285.5,220.017
+                                            c0,8.4-6.8,15.1-15.1,15.1c-8.3,0-15.1-6.8-15.1-15.1s6.8-15.1,15.1-15.1C278.7,204.917,285.5,211.617,285.5,220.017z
+                                            M409.7,213.117h-31.2c4.3-12.9,6.6-26.7,6.6-41c0-72.3-58.8-131.1-131.1-131.1c-69.5,0-126.4,54.4-130.7,122.9H98.5
+                                            c4.3-82.1,72.4-147.5,155.5-147.5c85.8,0,155.7,69.8,155.7,155.7V213.117z"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M372.5,285.217c0,0-45.2,50.8-118.5,50.8c-72.7,0-118.5-50.8-118.5-50.8S0,339.917,0,508.017h508
+                                            C510.5,341.617,372.5,285.217,372.5,285.217z M16.5,491.617c2.8-78.6,46.6-149,116.1-186.5c33.3,30.5,76.2,47.2,121.4,47.2
+                                            s88-16.7,121.4-47.2c69.4,37.5,113.2,107.9,116.1,186.5H16.5z"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <rect x="245.8" y="368.717" width="16.4" height="16.4"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <rect x="245.8" y="409.717" width="16.4" height="16.4"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <rect x="245.8" y="450.617" width="16.4" height="16.4"/>
+                                    </g>
+                                </g>
+
+                            </svg>
                         </div>
                         <div class="our-services__content">
                             <div class="our-services__content-title"><a href="#">24/7 Support</a></div>
@@ -1285,7 +1387,34 @@
                             <form action="#" method="POST">
                                 <div class="subscribe__form-content d-flex">
                                     <input type="email" placeholder="Email address" required="">
-                                    <button type="submit"><img src="assets/images/send_icon.png" class="img-fluid" alt="Send icon"></button>
+                                    <button type="submit">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+                                            <g>
+                                                <g>
+                                                    <path d="M493.469,0.481c-0.14,0.034-0.281,0.062-0.421,0.1L26.362,127.859c-11.729,3.199-14.956,18.333-5.591,26.049
+                                                        L166.019,273.57l-26.743,80.228c-3.898,11.696,7.26,22.877,18.974,18.974l80.228-26.743L358.14,491.277
+                                                        c7.748,9.403,22.855,6.115,26.049-5.591L511.466,18.999c0.04-0.147,0.07-0.296,0.105-0.444
+                                                        C514.204,7.56,504.277-2.128,493.469,0.481z M62.21,149.178L431.982,48.331L183.593,249.179L62.21,149.178z M234.599,315.698
+                                                        l-57.376,19.126l19.126-57.376L396.206,115.84L234.599,315.698z M362.868,449.836L262.866,328.453l200.85-248.39L362.868,449.836z
+                                                        "/>
+                                                </g>
+                                            </g>
+                                            <g>
+                                                <g>
+                                                    <path d="M46.805,465.313c-5.861-5.856-15.359-5.851-21.214,0.01L4.388,486.546c-5.855,5.86-5.851,15.358,0.01,21.213
+                                                        c5.594,5.589,15.625,5.584,21.213-0.01l21.204-21.223C52.67,480.666,52.666,471.168,46.805,465.313z"/>
+                                                </g>
+                                            </g>
+                                            <g>
+                                                <g>
+                                                    <path d="M110.413,401.645c-5.861-5.855-15.357-5.851-21.213,0.01l-21.203,21.223c-5.322,5.327-5.317,15.891,0.01,21.213
+                                                        c5.059,5.054,16.156,5.051,21.213-0.01l21.203-21.223C116.278,416.998,116.274,407.5,110.413,401.645z"/>
+                                                </g>
+                                            </g>
+
+                                        </svg>
+                                    </button>
                                 </div>
                             </form>
                         </li>
@@ -1308,12 +1437,418 @@
     </footer>
     <div class="to-top" id="scroll-top"><i class="fas fa-chevron-up"></i></div>
 
-    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
-    <!-- <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script> -->
-    <script src="assets/js/flickity.pkgd.js"></script>
+    <div class="popup-quickview" id="popup_qv">
+        <div class="popup-quickview__content">
+            <div class="popup-quickview__body">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 col-sm-12 col-12 product-images">
+                        <div class="product-images__list">
+                            <div class="product-images__item" style="background-image: url('assets/images/quick_view/quick_view6.jpg');"></div>
+                            <div class="product-images__item" style="background-image: url('assets/images/quick_view/quick_view7.jpg');"></div>
+                            <div class="product-images__item" style="background-image: url('assets/images/quick_view/quick_view8.jpg');"></div>
+                            <div class="product-images__item" style="background-image: url('assets/images/quick_view/quick_view9.jpg');"></div>
+                            <div class="product-images__item" style="background-image: url('assets/images/quick_view/quick_view10.jpg');"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-12 entry-summary">
+                        <div class="entry-summary-section">
+                            <div class="entry-summary__title">
+                                <a class="entry-summary__title-link" href="#">Band-collar Popover Tunic</a>
+                            </div>
+                            <div class="entry-summary__price">$68.0</div>
+                            <p class="entry-summary__description">
+                                Go sporty this summer with this vintage navy and white striped v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks for a stylish sporty vibe.
+                            </p>
+                            <form action="#" method="POST">
+                                <div class="entry-summary__size">
+                                    <div class="entry-summary__size-title">Size: S</div>
+                                    <ul class="entry-summary__size-list">
+                                        <li class="entry-summary__size-item"><button type="button" class="entry-summary__size-btn entry-summary__size-btn--active">S</button></li>
+                                        <li class="entry-summary__size-item"><button type="button" class="entry-summary__size-btn entry-summary__size-btn--off">M</button></li>
+                                        <li class="entry-summary__size-item"><button type="button" class="entry-summary__size-btn">L</button></li>
+                                    </ul>
+                                </div>
+                                <div class="entry-summary__group d-flex align-items-center justify-content-between">
+                                    <div class="entry-summary__quantity">
+                                        <button class="btn minus-btn disabled" type="button">-</button>
+                                        <input type="text" id="quantity-number" value="1">
+                                        <button class="btn plus-btn" type="button">+</button>
+                                    </div>
+                                    <button type="submit" class="entry-summary__button-addcart">ADD TO CART</button>
 
-    <script src="assets/js/slick.min.js"></script>
+                                    <a href="#" id="addToWishList" class="product-item__wishlist">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon feather feather-heart">
+                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                        </svg>
+                                        <span class="add-wishlist-title">Add To Wishlist</span>
+                                    </a>
+                                </div>
+                                <div class="entry-summary__seal">
+                                    <img class="entry-summary__seal-img img-fluid" src="assets/images/trust_img2_480x.png" alt="entry-summary__seal img">
+                                </div>
+                                <div class="entry-summary__meta">
+                                    <div class="entry-summary__meta-sku">
+                                        <span class="entry-summary__meta-heading">Sku:</span>
+                                        <span class="entry-summary__meta-category">N/A</span>
+                                    </div>
+                                    <div class="entry-summary__meta-categories">
+                                        <span class="entry-summary__meta-heading">Categories:</span>
+                                        <span class="entry-summary__meta-category">
+                                            <a href="#">All</a>,
+                                            <a href="#">Best seller</a>,
+                                            <a href="#">Bottom</a>,
+                                            <a href="#">Dress</a>,
+                                            <a href="#">New Arrival</a>,
+                                            <a href="#">Tops</a>,
+                                            <a href="#">Men</a>,
+                                            <a href="#">Woman</a>,
+                                        </span>
+                                    </div>
+                                    <div class="entry-summary__meta-tags">
+                                        <span class="entry-summary__meta-heading">Tags:</span>
+                                        <span class="entry-summary__meta-category">
+                                            <a href="#">Color white</a>,
+                                            <a href="#">Color green</a>,
+                                            <a href="#">Color red</a>,
+                                            <a href="#">Color purple</a>,
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="#" class="entry-summary__meta-link">Full view details<span class="entry-summary__meta-link-icon"><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-close" id="popup-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mini-cart" id="mini-cart">
+        <div class="mini-cart__heading d-flex align-items-center justify-content-between">
+            <div class="mini-cart_heading-title">Shopping cart</div>
+            <div class="minicart-close" id="minicart-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                    <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </div>
+        </div>
+        <div class="mini-cart__shipping">
+            <span>Congratulations!</span> You've got free shipping!
+        </div>
+        <div class="mini-cart__wrap">
+            <div class="mini-cart__product-list">
+                <div class="mini-cart__product-scroll">
+                    <div class="mini-cart__product-item">
+                        <div class="mini-cart__product-thumb">
+                            <a href="#" class="d-block">
+                                <img src="assets/images/products/Essentials-Jumpman-boxy-t-shirt_02.jpg" class="img-fluid" alt="product thumb">
+                            </a>
+                        </div>
+                        <div class="mini-cart__product-info">
+                            <a href="#" class="mini-cart__product-link d-block">
+                                <p class="mini-cart__product-title">Band-collar Popover Tunic </p>
+                            </a>
+                            <div class="mini-cart__product-price">$288.00</div>
+                                <div class="mini-cart__product-quantity">
+                                    <button class="btn minus-btn disabled" type="button">-</button>
+                                    <input type="text" name="quantity" value="1">
+                                    <button class="btn plus-btn" type="button">+</button>
+                                </div>
+                            <div class="mini-cart__product-action d-flex">
+                                <div class="mini-cart__product-action-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit">
+                                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                    </svg>
+                                    <span class="mini-cart__product-tooltip tooltip-edit">Edit this item</span>
+                                </div>
+                                <div class="mini-cart__product-action-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                        <line x1="10" y1="11" x2="10" y2="17"></line>
+                                        <line x1="14" y1="11" x2="14" y2="17"></line>
+                                    </svg>
+                                    <span class="mini-cart__product-tooltip tooltip-delete">Delete this item</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mini-cart__product-item">
+                        <div class="mini-cart__product-thumb">
+                            <a href="#" class="d-block">
+                                <img src="assets/images/products/Essentials-Jumpman-boxy-t-shirt_04.jpg" class="img-fluid" alt="product thumb">
+                            </a>
+                        </div>
+                        <div class="mini-cart__product-info">
+                            <a href="#" class="mini-cart__product-link d-block">
+                                <p class="mini-cart__product-title">Band-collar Popover Tunic </p>
+                            </a>
+                            <div class="mini-cart__product-price">$288.00</div>
+                            <div class="mini-cart__product-quantity">
+                                <button class="btn minus-btn disabled" type="button">-</button>
+                                <input type="text" name="quantity" value="1">
+                                <button class="btn plus-btn" type="button">+</button>
+                            </div>
+                            <div class="mini-cart__product-action d-flex">
+                                <div class="mini-cart__product-action-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit">
+                                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                    </svg>
+                                    <span class="mini-cart__product-tooltip tooltip-edit">Edit this item</span>
+                                </div>
+                                <div class="mini-cart__product-action-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                        <line x1="10" y1="11" x2="10" y2="17"></line>
+                                        <line x1="14" y1="11" x2="14" y2="17"></line>
+                                    </svg>
+                                    <span class="mini-cart__product-tooltip tooltip-delete">Delete this item</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="mini-cart__product-item">
+                        <div class="mini-cart__product-thumb">
+                            <a href="#" class="d-block">
+                                <img src="assets/images/products/Leather-Chunky-Sneakers_01.jpg" class="img-fluid" alt="product thumb">
+                            </a>
+                        </div>
+                        <div class="mini-cart__product-info">
+                            <a href="#" class="mini-cart__product-link d-block">
+                                <p class="mini-cart__product-title">Band-collar Popover Tunic </p>
+                            </a>
+                            <div class="mini-cart__product-price">$288.00</div>
+                            <div class="mini-cart__product-quantity">
+                                <button class="btn minus-btn disabled" type="button">-</button>
+                                <input type="text" name="quantity" value="1">
+                                <button class="btn plus-btn" type="button">+</button>
+                            </div>
+                            <div class="mini-cart__product-action d-flex">
+                                <div class="mini-cart__product-action-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit">
+                                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                    </svg>
+                                    <span class="mini-cart__product-tooltip tooltip-edit">Edit this item</span>
+                                </div>
+                                <div class="mini-cart__product-action-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                        <line x1="10" y1="11" x2="10" y2="17"></line>
+                                        <line x1="14" y1="11" x2="14" y2="17"></line>
+                                    </svg>
+                                    <span class="mini-cart__product-tooltip tooltip-delete">Delete this item</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mini-cart__product-item">
+                        <div class="mini-cart__product-thumb">
+                            <a href="#" class="d-block">
+                                <img src="assets/images/products/Oversized-Graphic-Hoodie_01.jpg" class="img-fluid" alt="product thumb">
+                            </a>
+                        </div>
+                        <div class="mini-cart__product-info">
+                            <a href="#" class="mini-cart__product-link d-block">
+                                <p class="mini-cart__product-title">Band-collar Popover Tunic </p>
+                            </a>
+                            <div class="mini-cart__product-price">$288.00</div>
+                            <div class="mini-cart__product-quantity">
+                                <button class="btn minus-btn disabled" type="button">-</button>
+                                <input type="text" name="quantity" value="1">
+                                <button class="btn plus-btn" type="button">+</button>
+                            </div>
+                            <div class="mini-cart__product-action d-flex">
+                                <div class="mini-cart__product-action-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit">
+                                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                    </svg>
+                                    <span class="mini-cart__product-tooltip tooltip-edit">Edit this item</span>
+                                </div>
+                                <div class="mini-cart__product-action-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                        <line x1="10" y1="11" x2="10" y2="17"></line>
+                                        <line x1="14" y1="11" x2="14" y2="17"></line>
+                                    </svg>
+                                    <span class="mini-cart__product-tooltip tooltip-delete">Delete this item</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                         
+                </div>          
+            </div>
+            <div class="mini-cart__footer">
+                <div class="mini-cart__discount">
+                    <span class="mini-cart__discount-icon"><i class="fas fa-tags"></i></span>
+                    <span>5% OFF</span>
+                </div>
+                <div class="mini-cart__total d-flex align-items-center justify-content-between my-2">
+                    <div class="mini-cart__total-title">
+                        Subtotal:
+                    </div>
+                    <div class="mini-cart__total-price">
+                        <span class="mini-cart__total-price-origin">$288.00</span>
+                        <span class="mini-cart__total-price-discount">- $28.00</span>
+                        <div class="mini-cart__total-price-total">$260.00</div>
+                    </div>
+                </div>
+                <div class="mini-cart__checkbox d-flex align-items-center">
+                    <input id="cart-agree" name="cart-agree" type="checkbox">
+                    <label for="cart-agree" class="cart-agree__label">I agree with the terms and conditions </label>
+                </div>
+                <div class="mini-cart__action">
+                    <button class="mini-cart__action-btn btn-viewcart">View Cart</button>
+                    <button class="mini-cart__action-btn btn-checkout">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-search" id="popup-search">
+        <div class="popup-search__content">
+            <div class="popup-search__body">
+                <div class="popup-search__form">
+                    <form action="#" method="POST">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                                <div class="popup-search__form-category">
+                                    <select name="product_type">
+                                        <option value="*">All Categories</option>
+                                        <option value="Acessories">Acessories</option>
+                                        <option value="Bag">Bag</option>
+                                        <option value="Camera">Camera</option>
+                                        <option value="Decor">Decor</option>
+                                        <option value="Earphones">Earphones</option>
+                                        <option value="Electric">Electric</option>
+                                        <option value="Furniture">Furniture</option>
+                                        <option value="Headphone">Headphone</option>
+                                        <option value="Men">Men</option>
+                                        <option value="Shoes">Shoes</option>
+                                        <option value="Speaker">Speaker</option>
+                                        <option value="Watch">Watch</option>
+                                        <option value="Women">Women</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                <div class="popup-search__form-input">
+                                    <input type="text" name="key" placeholder="Seach for product">
+                                    <button type="submit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="popup-search__inspiration">
+                    Need some inspiration?
+                </div>
+                <div class="popup-search__result">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-12">
+                            <div class="product-search__item">
+                                <a href="#" class="product-search__item-img d-block">
+                                    <img src="assets/images/products/Oversized-Graphic-Hoodie_01.jpg" class="img-fluid" alt="product-search__item">
+                                </a>
+                                <div class="product-search__info">
+                                    <a href="#" class="product-search__info-title">Analogue Resin Strap</a>
+                                    <div class="product-search__info-price">$33.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-12">
+                            <div class="product-search__item">
+                                <a href="#" class="product-search__item-img d-block">
+                                    <img src="assets/images/products/Jacket-–-Sun-Bleached_01.jpg" class="img-fluid" alt="product-search__item">
+                                </a>
+                                <div class="product-search__info">
+                                    <a href="#" class="product-search__info-title">Analogue Resin Strap</a>
+                                    <div class="product-search__info-price">$33.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-12">
+                            <div class="product-search__item">
+                                <a href="#" class="product-search__item-img d-block">
+                                    <img src="assets/images/products/Jean-Zero-Gravity_03.jpg" class="img-fluid" alt="product-search__item">
+                                </a>
+                                <div class="product-search__info">
+                                    <a href="#" class="product-search__info-title">Analogue Resin Strap</a>
+                                    <div class="product-search__info-price">$33.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-12">
+                            <div class="product-search__item">
+                                <a href="#" class="product-search__item-img d-block">
+                                    <img src="assets/images/products/Miley-Triangle-Hair-Scarf_01.jpg" class="img-fluid" alt="product-search__item">
+                                </a>
+                                <div class="product-search__info">
+                                    <a href="#" class="product-search__info-title">Analogue Resin Strap</a>
+                                    <div class="product-search__info-price">$33.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-12">
+                            <div class="product-search__item">
+                                <a href="#" class="product-search__item-img d-block">
+                                    <img src="assets/images/products/Oversized-Graphic-Hoodie_01.jpg" class="img-fluid" alt="product-search__item">
+                                </a>
+                                <div class="product-search__info">
+                                    <a href="#" class="product-search__info-title">Analogue Resin Strap</a>
+                                    <div class="product-search__info-price">$33.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-12">
+                            <div class="product-search__item">
+                                <a href="#" class="product-search__item-img d-block">
+                                    <img src="assets/images/products/sleeve-flower-print-revere_03.jpg" class="img-fluid" alt="product-search__item">
+                                </a>
+                                <div class="product-search__info">
+                                    <a href="#" class="product-search__info-title">Analogue Resin Strap</a>
+                                    <div class="product-search__info-price">$33.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-12">
+                            <div class="product-search__item">
+                                <a href="#" class="product-search__item-img d-block">
+                                    <img src="assets/images/products/Miley-Triangle-Hair-Scarf_02.jpg" class="img-fluid" alt="product-search__item">
+                                </a>
+                                <div class="product-search__info">
+                                    <a href="#" class="product-search__info-title">Analogue Resin Strap</a>
+                                    <div class="product-search__info-price">$33.00</div>
+                                </div>
+                            </div>
+                        </div>                              
+                    </div>
+                </div>
+                <div class="popup-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/flickity.pkgd.js"></script>
 
     <script src="assets/js/main.js"></script>
 

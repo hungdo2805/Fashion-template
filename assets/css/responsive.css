@@ -118,6 +118,14 @@
     .header-mobile {
         display: flex;
     }
+    .entry-summary__group{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .popup-quickview__content {
+        max-width: 900px;
+        margin: 1.75rem .5rem;
+    }
 
 
 }
@@ -371,5 +379,9 @@
     }
     .footer-top {
         padding: 30px 0px!important;
+    }
+
+    .popup-search__form-input{
+        margin-top: 10px;
     }
 }
